@@ -1,0 +1,10 @@
+[ 24-07-2026 03:14 PM ] [ INFO ] Preparando archivos para ejecutar los siguientes análisis:
+[ 24-07-2026 03:14 PM ] [ INFO ] Preparando limpieza de los archivos
+[ 24-07-2026 03:15 PM ] [ INFO ] Iniciando limpieza: C:\Proyectos\alertas-aliados\data\Actividades-R5 ORIENTE_07_24_26 1.xlsx
+[ 24-07-2026 03:15 PM ] [ INFO ] Iniciando limpieza: C:\Proyectos\alertas-aliados\data\Actividades-R5 ORIENTE_07_28_26.xlsx
+[ 24-07-2026 03:15 PM ] [ INFO ] Iniciando limpieza: C:\Proyectos\alertas-aliados\data\Actividades-R5 ORIENTE_07_29_26.xlsx
+[ 24-07-2026 03:15 PM ] [ INFO ] Preparando archivo de salida
+[ 24-07-2026 03:15 PM ] [ INFO ] Archivo creado: C:\Proyectos\alertas-aliados\visual-telcos.xlsx
+[ 24-07-2026 03:15 PM ] [ INFO ] Archivo creado: C:\Proyectos\alertas-aliados\visual-tabasco.xlsx
+[ 24-07-2026 03:15 PM ] [ INFO ] Limpieza completada
+[ 24-07-2026 03:15 PM ] [ INFO ] Datos procesados correctamente
