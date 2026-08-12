@@ -220,3 +220,8 @@ def create_file(df: pd.DataFrame, path: Path, datetime_format: str | None = None
                 "style": None,
             },
         )
+
+
+def reorder_columns(df: pd.DataFrame, order: list[str]) -> pd.DataFrame:
+
+    return df.loc[:, order]

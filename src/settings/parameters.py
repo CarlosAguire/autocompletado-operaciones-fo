@@ -14,6 +14,7 @@ FO_TYPES = {
     "Técnico": "string",
     "Estado": "string",
     "Nombre Cliente": "string",
+    "Nombre Cliente.1": "string",
     "Numero OS/oth": "string",
     "Número OP/otp": "string",
     "Tipo de Actividad": "string",
@@ -38,6 +39,31 @@ FILTERS = {
         "Tipo de Actividad": ["Almuerzo", "Actividades de Almacen"],
     },
 }
+
+
+# Nombre de columnas finales para el archivo
+FINAL_COLUMNS = {
+    "Numero OS/oth": "Numero OTH",
+    "Número OP/otp": "Número OTP",
+}
+
+
+# Orden de columnas para el archivo
+COLUMN_ORDER = [
+    "Técnico",
+    "Tipo de Actividad",
+    "Estado",
+    "Intervalos de tiempo",
+    "Fecha",
+    "Orden de trabajo",
+    "Compañia",
+    "Ciudad",
+    "Numero OTH",
+    "Número OTP",
+    "Nombre Cliente",
+    "Subtipo de Cliente (subsegmento)",
+    "Notas de actividad",
+]
 
 
 # Archivo de salida

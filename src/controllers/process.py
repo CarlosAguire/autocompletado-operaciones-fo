@@ -4,7 +4,13 @@ import pandas as pd
 
 from logs_setup import logging
 from settings import parameters
-from utils.dataframe import create_file, drop_duplicate_columns, filter_df, normalize_date
+from utils.dataframe import (
+    create_file,
+    drop_duplicate_columns,
+    filter_df,
+    normalize_date,
+    reorder_columns,
+)
 from utils.files import read_xlsx_file
 
 
@@ -21,6 +27,7 @@ def __prepare_file_output(df: pd.DataFrame) -> None:
 
     # Removemos columnas duplicadas
     cleaned_df = drop_duplicate_columns(target_column="Ciudad", df=cleaned_df)
+    cleaned_df = drop_duplicate_columns(target_column="Nombre Cliente", df=cleaned_df)
 
     # Normalizamos la columna de fecha
     cleaned_df = normalize_date(
@@ -35,6 +42,15 @@ def __prepare_file_output(df: pd.DataFrame) -> None:
         key=lambda s: s.str.lower(),
         ignore_index=True,
     )
+
+    # Renombramos una columna del archivo
+    cleaned_df.rename(
+        columns=parameters.FINAL_COLUMNS,
+        inplace=True,
+    )
+
+    # Reordenamos las columnas
+    cleaned_df = reorder_columns(df=cleaned_df, order=parameters.COLUMN_ORDER)
 
     # Creamos el archivo de salida
     create_file(df=cleaned_df, path=parameters.OUTPUT_FILE_PATH)
