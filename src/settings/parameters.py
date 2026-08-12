@@ -5,6 +5,10 @@ THIS_FILE = Path(__file__).resolve()
 PROJECT_ROOT = THIS_FILE.parent.parent.parent
 
 
+# Configuraciónes y rutas de archivos
+DATA_FOLDER = PROJECT_ROOT / "data"
+
+
 # Columnas y tipos requeridos para cada archivo
 FO_TYPES = {
     "Técnico": "string",

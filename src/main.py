@@ -1,16 +1,17 @@
 import sys
 import traceback
-from pathlib import Path
 
 from controllers.process import run
 from logs_setup import logging
+from settings.parameters import DATA_FOLDER
+from utils.files import get_excel_files
 
 
 def __run() -> None:
     """Función principal que ejecuta el flujo de trabajo del proyecto."""
 
-    files_path = Path("path/to/excel_file1.xlsx")
-    run(file_path=files_path)
+    file_path = get_excel_files(folder_path=DATA_FOLDER)[0]
+    run(file_path=file_path)
 
 
 if __name__ == "__main__":

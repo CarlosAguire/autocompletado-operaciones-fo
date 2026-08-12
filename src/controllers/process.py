@@ -29,6 +29,13 @@ def __prepare_file_output(df: pd.DataFrame) -> None:
         input_format="mm/dd/yy",
     )
 
+    # Ordenamos el DataFrame por la columna "Tipo de Actividad"
+    cleaned_df = cleaned_df.sort_values(
+        by="Tipo de Actividad",
+        key=lambda s: s.str.lower(),
+        ignore_index=True,
+    )
+
     # Creamos el archivo de salida
     create_file(df=cleaned_df, path=parameters.OUTPUT_FILE_PATH)
 
