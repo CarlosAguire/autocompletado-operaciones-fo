@@ -9,7 +9,7 @@ set "PYTHONIOENCODING=utf-8"
 
 
 REM === (2) Rutas (ruta fija) ===
-set "PROJECT_DIR=C:\Proyectos\alertas-aliados"
+set "PROJECT_DIR=C:\Proyectos\autocompletado-operaciones-fo"
 set "LOG_DIR=%PROJECT_DIR%\logs"
 set "OUTFILE=%LOG_DIR%\py_out_logs.txt"
 set "ERRFILE=%LOG_DIR%\logs.txt"
